@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
-import './haederstyles.css';
+import { UserRound } from 'lucide-react';
+import './stylesheader.css';
 
 function Header() {
   return (
-    <header className="site-header">
+    <header className="header">
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/preguntas">Preguntas</Link>
-        <Link to="/productos">Productos</Link>
+        <Link to="/Preguntas">Preguntas</Link>
+        <Link to="/Productos">Productos</Link>
+        <Link to="/login"><UserRound size ={25}/>Login</Link>
       </nav>
     </header>
   );
